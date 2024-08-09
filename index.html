@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="extra.css">
+</head>
+<body class="text-slate-950 py-3">
+    <nav x-data="{menu: false, text: 'MENU', underline1: 'under-none'}" class="fixed w-full">
+        <div id="topbar" class="flex justify-between px-3 py-3 z-20">
+            <div id="nav-start" class="z-20">
+                <img src="assets/Logo1.svg" alt="Logo" class="h-14 text-blue-700">
+            </div>
+            <div id="nav-end" class="flex items-center justify-center w-16 z-20">
+                <span x-bind:class="underline1" @click="menu = !menu; if(menu){text = 'CLOSE'; underline1 = 'underline1'} else {text = 'MENU'; underline1 = 'under-none'}" class="font-medium text-lg inline cursor-pointer animate-slideright relative after:content-[''] after:w-full after:h-0.5 after:bg-black after:absolute after:block after:transition-transform" x-text="text"></span>
+            </div>
+        </div>
+        <div x-show="menu" id="navigation" x-collapse class="absolute top-0 w-full bg-gradient-to-b from-blue-300 to-blue-100 shadow-md">
+            <div class="h-90vh">
+                <div class="flex flex-col justify-evenly items-center w-full mt-16 text-4xl font-medium h-1/2">
+                    <span class="animate-slideright">HOME</span>
+                    <span class="animate-slideleft navdelay1">ABOUT</span>
+                    <span class="animate-slideright navdelay2">PROJECTS</span>
+                    <span class="animate-slideleft navdelay3">CONTACT</span>
+                </div>
+                <div class="flex">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="h-screen bg-yellow-300">
+
+        </div>
+    </main>
+</body>
+</html>
