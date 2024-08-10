@@ -195,10 +195,24 @@ body::after {
     transform: scaleX(1);
     transition: all 1s ease-out 1s;
 }
+.widthline::after {
+    content: ''; 
+    width: 0%;
+    height: 3px;
+    background-color: #172554;
+    position: absolute; 
+    transition: all 1s ease-out 1s;
+
+    display: block;
+}
+.widthlineanim::after {
+    width: 100%;
+    transition: all 1s ease-out 1s;
+}
 
 .svg-color {
     filter: invert(10%) sepia(97%) saturate(1372%) hue-rotate(212deg) brightness(92%) contrast(95%);
-    transition: all 0.25s ease-out;
+    transition: all 0.05s ease-out;
 }
 @media screen and (min-width: 768px){
     .svg-color:hover{
@@ -207,6 +221,6 @@ body::after {
 .under-none:hover::after {
     transform: scaleX(1);
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 0.25s;
+    transition-duration: 0.05s;
 }
 }

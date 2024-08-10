@@ -74,6 +74,21 @@ scaleElements.forEach((el) => scaleobserver.observe(el));
 
 //--------------------------------------------------
 
+
+const widthobserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+      console.log(entry)
+      if (entry.isIntersecting) {
+          entry.target.classList.add('widthlineanim')
+      } 
+
+  })
+})
+
+const widthElements = document.querySelectorAll('.widthline');
+widthElements.forEach((el) => widthobserver.observe(el)); 
+
+//--------------------------------------------------
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
