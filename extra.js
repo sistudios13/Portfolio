@@ -77,10 +77,16 @@ scaleElements.forEach((el) => scaleobserver.observe(el));
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
+  if (window.innerWidth < 500) {
+    var scrollOffset = 120
+  }
+  if (window.innerWidth > 500) {
+    var scrollOffset = 100
+  }
   var winScroll = document.getElementById('langbar').scrollTop || document.documentElement.scrollTop;
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight + 500;
   var scrolled = (winScroll / height) * 200;
-  document.getElementById("langbar").style.transform = "translateX(" + (scrolled -130) + "mm)";
+  document.getElementById("langbar").style.transform = "translateX(" + (scrolled - scrollOffset) + "mm)";
 }
 
 function enableBodyScroll() {

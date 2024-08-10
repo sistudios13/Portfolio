@@ -118,7 +118,11 @@
 
 .under-none::after {
     transform: scaleX(0);
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.25s;
 }
+
+
 
 body::after, body::before {
     content: "";
@@ -194,4 +198,15 @@ body::after {
 
 .svg-color {
     filter: invert(10%) sepia(97%) saturate(1372%) hue-rotate(212deg) brightness(92%) contrast(95%);
+    transition: all 0.25s ease-out;
+}
+@media screen and (min-width: 768px){
+    .svg-color:hover{
+    filter: invert(71%) sepia(9%) saturate(1884%) hue-rotate(177deg) brightness(105%) contrast(98%);
+}
+.under-none:hover::after {
+    transform: scaleX(1);
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.25s;
+}
 }
