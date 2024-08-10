@@ -89,6 +89,21 @@ const widthElements = document.querySelectorAll('.widthline');
 widthElements.forEach((el) => widthobserver.observe(el)); 
 
 //--------------------------------------------------
+
+const imgobserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+      console.log(entry)
+      if (entry.isIntersecting) {
+          entry.target.classList.add('imganim')
+      } 
+
+  })
+})
+
+const imgElements = document.querySelectorAll('.img');
+imgElements.forEach((el) => imgobserver.observe(el)); 
+
+//--------------------------------------------------
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
@@ -112,7 +127,7 @@ function enableBodyScroll() {
       if (document.body.style.marginTop) {
         const scrollTop = -parseInt(document.body.style.marginTop, 10);
         document.body.style.marginTop = '';
-        window.scrollTo(window.pageXOffset, scrollTop);
+        window.scrollTo(window.scrollX, scrollTop);
       }
     } else {
       window.addEventListener('load', enableBodyScroll);

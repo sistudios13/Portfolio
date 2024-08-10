@@ -198,17 +198,54 @@ body::after {
 .widthline::after {
     content: ''; 
     width: 0%;
-    height: 3px;
+    height: 2px;
     background-color: #172554;
     position: absolute; 
     transition: all 1s ease-out 1s;
+    margin-top: 40px;
 
     display: block;
 }
 .widthlineanim::after {
-    width: 100%;
+    width: 50%;
+    margin-top: 30px;
     transition: all 1s ease-out 1s;
 }
+
+.img::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #172554;
+    z-index: 100;
+    display: block;
+    
+}
+
+.img {
+    overflow: hidden;
+}
+
+.img img {
+    filter: blur(4px);
+    scale: 1.2;
+}
+
+.imganim::after {
+    height: 0;
+    transition: all 1s ease-out;
+}
+
+.imganim img {
+    filter: blur(0);
+    scale: 1;
+    transition: all 1.5s ease-out;
+}
+
+
 
 .svg-color {
     filter: invert(10%) sepia(97%) saturate(1372%) hue-rotate(212deg) brightness(92%) contrast(95%);
