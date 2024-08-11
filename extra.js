@@ -127,7 +127,7 @@ function enableBodyScroll() {
       if (document.body.style.marginTop) {
         const scrollTop = -parseInt(document.body.style.marginTop, 10);
         document.body.style.marginTop = '';
-        window.scrollTo(window.scrollX, scrollTop);
+        window.scrollTo(window.scrollX, pageXOffset);
       }
     } else {
       window.addEventListener('load', enableBodyScroll);
