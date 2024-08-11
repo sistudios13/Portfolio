@@ -230,7 +230,7 @@ body::after {
 }
 
 .img img {
-    filter: blur(4px);
+
     scale: 1.2;
 }
 
@@ -240,9 +240,8 @@ body::after {
 }
 
 .imganim img {
-    filter: blur(0);
     scale: 1;
-    transition: all 1.5s ease-out;
+    transition: all 1.2s ease-out;
 }
 
 
