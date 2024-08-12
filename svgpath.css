@@ -1,31 +1,20 @@
-body {
-	height: 400vh;
-    color: black;
-}
 
-.header-section {
-  margin: 100px auto 0;
-}
 
-svg {
-  max-width: 600px;
-  overflow: visible;
-  margin-top: 60vh;
-}
+
 
 .ball {
-  fill: rgb(0, 0, 0);
+  fill: #172554;
   visibility: hidden;
 }
 
 .line {
   fill: none;
-  stroke: rgb(0, 0, 0);
+  stroke: #172554;
   stroke-width: 2px;
 }
 text {
-  fill: rgb(0, 0, 0);
+  color: #172554;
   font-size: 15px;
-  font-family: "Signika Negative", sans-serif; 
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; 
   visibility: hidden;
 }

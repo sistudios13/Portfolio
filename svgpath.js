@@ -14,9 +14,10 @@ const pulses = gsap.timeline({
     transformOrigin: 'center', 
     ease: "elastic(2.5, 1)"
   }})
-.to(".ball02, .text01", {}, 0.2) 
-.to(".ball03, .text02", {}, 0.33)
-.to(".ball04, .text03", {}, 0.46)
+.to(".ball02, .text01, .h01, .t01", {}, 0.07) 
+.to(".ball03, .text02, .h02, .t02", {}, 0.21)
+.to(".ball04, .text03, .h03, .t03", {}, 0.36)
+.to(".ball05, .text04, .h04, .t04", {}, 0.50)
 
 const main = gsap.timeline({defaults: {duration: 1},
   scrollTrigger: {

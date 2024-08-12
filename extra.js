@@ -1,6 +1,6 @@
 const fadeobserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
+        
         if (entry.isIntersecting) {
             entry.target.classList.add('scrollfadeanim')
         }
@@ -16,7 +16,7 @@ fadeElements.forEach((el) => fadeobserver.observe(el));
 
 const fade2observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
+        
         if (entry.isIntersecting) {
             entry.target.classList.add('scrollfadeanim2')
         }
@@ -31,7 +31,7 @@ fade2Elements.forEach((el) => fade2observer.observe(el));
 
 const leftobserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
+        
         if (entry.isIntersecting) {
             entry.target.classList.add('scrollleftanim')
         } 
@@ -46,7 +46,7 @@ leftElements.forEach((el) => leftobserver.observe(el));
 
 const rightobserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
+        
         if (entry.isIntersecting) {
             entry.target.classList.add('scrollrightanim')
         } 
@@ -61,7 +61,7 @@ rightElements.forEach((el) => rightobserver.observe(el));
 
 const scaleobserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
+        
         if (entry.isIntersecting) {
             entry.target.classList.add('scalelineanim')
         } 
@@ -77,7 +77,7 @@ scaleElements.forEach((el) => scaleobserver.observe(el));
 
 const widthobserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-      console.log(entry)
+      
       if (entry.isIntersecting) {
           entry.target.classList.add('widthlineanim')
       } 
@@ -92,7 +92,7 @@ widthElements.forEach((el) => widthobserver.observe(el));
 
 const imgobserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-      console.log(entry)
+      
       if (entry.isIntersecting) {
           entry.target.classList.add('imganim')
       } 

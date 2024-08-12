@@ -127,7 +127,6 @@
 body::after, body::before {
     content: "";
     will-change: top left;
-    backface-visibility: hidden;
     position: fixed;
     left: 0;
     width: 100%;
