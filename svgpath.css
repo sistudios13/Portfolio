@@ -12,9 +12,19 @@
   stroke: #172554;
   stroke-width: 2px;
 }
-text {
-  color: #172554;
+text , .t01, .t02, .t03, .t04{
   font-size: 15px;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; 
   visibility: hidden;
+}
+
+.para {
+  font-size: 11px;
+}
+
+@media screen and (min-width:1600px){
+  .para {
+    font-size: 9px;
+  }
+  
 }
