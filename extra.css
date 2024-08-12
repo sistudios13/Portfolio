@@ -257,3 +257,7 @@ body::after {
     transition-duration: 0.05s;
 }
 }
+
+.h-50vh {
+    height: 50vh;
+}
