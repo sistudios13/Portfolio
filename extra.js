@@ -119,29 +119,3 @@ function myFunction() {
   document.getElementById("langbar").style.transform = "translateX(" + (scrolled - scrollOffset) + "mm)";
 }
 
-function enableBodyScroll() {
-    if (document.readyState === 'complete') {
-      document.body.style.position = '';
-      document.body.style.overflowY = '';
-  
-      if (document.body.style.marginTop) {
-        const scrollTop = -parseInt(document.body.style.marginTop, 10);
-        document.body.style.marginTop = '';
-        window.scrollTo(window.scrollX, pageXOffset);
-      }
-    } else {
-      window.addEventListener('load', enableBodyScroll);
-    }
-  }
-  
-  function disableBodyScroll({ savePosition = false } = {}) {
-    if (document.readyState === 'complete') {
-      if (document.body.scrollHeight > window.innerHeight) {
-        if (savePosition) document.body.style.marginTop = `-${window.pageYOffset}px`;
-        document.body.style.position = 'fixed';
-        document.body.style.overflowY = 'scroll';
-      }
-    } else {
-      window.addEventListener('load', () => disableBodyScroll({ savePosition }));
-    }
-  }

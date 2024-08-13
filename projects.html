@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Simon P">
     <title>Projects</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.svg">
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
@@ -42,7 +43,7 @@
         </div>
     </nav>
     <main class="h-fit">
-        <div class="flex justify-center items-center flex-row h-screen md:px-12 md:gap-12">
+        <div class="flex justify-center items-center flex-row h-screen mt-16 md:px-12 md:gap-12">
             <div class="flex flex-col w-10/12 justify-evently items-start gap-16 md:mb-12">
                 <div class="flex justify-left flex-col items-start">
                     <h2 class="w-fit text-6xl text-left font-bold mt-1 relative animate-fadeup navdelay2 widthline">My Projects</h2>
@@ -54,71 +55,151 @@
                 </div>
             </div>
             <div class="hidden md:flex h-full items-center ">
-                <img class="size-80 animate-slideright navdelay3" src="assets/file.svg" alt="svg image">
+                <img class="size-80 animate-slideright navdelay3" src="assets/ai.svg" alt="svg image">
             </div>
             
         </div>
-        <div class="flex flex-col justify-evenly gap-5">
-            <div class="flex flex-col justify-evenly items-center gap-5 h-screen">
-                <div class="flex flex-col justify-start items-start gap-5 w-11/12 h-50vh">
+        <div class="flex flex-col justify-evenly gap-12 mt-14">
+            <div class="flex flex-col justify-evenly items-center gap-12">
+                <div class="flex flex-col justify-start items-start gap-5 w-11/12">
                     <div class="flex flex-col justify-center items-start gap-3 w-full">
                         <div class="flex justify-between items-center w-full">
-                            <h2 class="text-2xl font-semibold scrollleft">Account Project</h2>
+                            <h2 class="text-2xl font-semibold scrollleft md:text-4xl">Account Project</h2>
                             <h2 class="scrollright">Feb 2022</h2>
                         </div>
                         <h3 class="underline underline-offset-4 decoration-2 scrollfade2">Python Turtle Graphics</h3>
                     </div>
-                    <p class="scrollfade">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi atque et quibusdam rerum minima eum cum beatae excepturi, consectetur error distinctio quam, aliquam eveniet, enim ipsa iure nemo recusandae ipsum!</p>
+                    <p class="scrollfade md:text-xl">This project, one of my first, was developed using Python and served as a simple account management system. Data was stored locally in a file, ensuring persistence across sessions. The user interface was created using Turtle graphics, showcasing an early exploration into graphical design within Python. This project marked an important step in my development journey, combining basic data handling with a visual representation.</p>
                     <div class="flex w-full items-start gap-4 scrollfade">
                         <img class="size-9" src="assets/python.svg" alt="python logo">
                     </div>
                 </div>
 
-                <div class="flex flex-col justify-start items-start gap-5 w-11/12 h-50vh">
+                <div class="flex flex-col justify-start items-start gap-5 w-11/12">
                     <div class="flex flex-col justify-center items-start gap-3 w-full">
                         <div class="flex justify-between items-center w-full">
-                            <h2 class="text-2xl font-semibold scrollleft">Space Invaders</h2>
+                            <h2 class="text-2xl font-semibold scrollleft md:text-4xl">Space Invaders</h2>
                             <h2 class="scrollright">July 2022</h2>
                         </div>
                         <h3 class="underline underline-offset-4 decoration-2 scrollfade2">Python Pygame Library</h3>
                     </div>
-                    <p class="scrollfade">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi atque et quibusdam rerum minima eum cum beatae excepturi, consectetur error distinctio quam, aliquam eveniet, enim ipsa iure nemo recusandae ipsum!</p>
+                    <p class="scrollfade md:text-xl">This project is a classic arcade-style Space Invaders game developed using Python and the Pygame library. The game features player-controlled movement, enemy waves, and a scoring system. The Pygame library was utilized to handle the graphics, sound, and game mechanics, providing an interactive and engaging experience. This project reflects my growing skills in game development, combining elements of coding, design, and gameplay mechanics.</p>
                     <div class="flex w-full items-start gap-4 scrollfade">
                         <img class="size-9" src="assets/python.svg" alt="python logo">
                     </div>
                 </div>
 
             </div>
-            <div class="flex flex-col justify-evenly items-center gap-5 h-screen">
-                <div class="flex flex-col justify-start items-start gap-5 w-11/12 h-50vh">
+            <div class="flex flex-col justify-evenly items-center gap-12 ">
+                <div class="flex flex-col justify-start items-start gap-5 w-11/12 ">
                     <div class="flex flex-col justify-center items-start gap-3 w-full">
                         <div class="flex justify-between items-center w-full">
-                            <h2 class="text-2xl font-semibold scrollleft">Account Project</h2>
-                            <h2 class="scrollright">Feb 2022</h2>
+                            <h2 class="text-2xl font-semibold scrollleft md:text-4xl">Questor</h2>
+                            <h2 class="scrollright">Dec 2022</h2>
                         </div>
-                        <h3 class="underline underline-offset-4 decoration-2 scrollfade2">Python Turtle Graphics</h3>
+                        <h3 class="underline underline-offset-4 decoration-2 scrollfade2">Game Dev</h3>
                     </div>
-                    <p class="scrollfade">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi atque et quibusdam rerum minima eum cum beatae excepturi, consectetur error distinctio quam, aliquam eveniet, enim ipsa iure nemo recusandae ipsum!</p>
-                    <div class="flex w-full items-start gap-4 scrollfade">
-                        <img class="size-9" src="assets/python.svg" alt="python logo">
+                    <p class="scrollfade md:text-xl">Questor is a platformer game where players navigate challenging levels filled with obstacles and enemies. The game features collectible items and unlockable abilities. It highlights my skills in level design and gameplay mechanics, reflecting my creativity and technical expertise in game development.</p>
+                    <div class="flex w-full justify-between items-start gap-4 scrollfade">
+                        <div>
+                            <img class="size-9" src="assets/godot.svg" alt="godot logo">
+                        </div>
+                        <div class="flex justify-center item-center ">
+                            <a href="https://westr86.itch.io/questor" target="_blank" class="p-1 border-blue-950 rounded-md border-2 font-semibold bg-gradient-to-r from-blue-300 to-blue-100 md:text-lg md:hover:tracking-widest text-center transition-all">GET QUESTOR</a>
+                        </div>
+                        
                     </div>
                 </div>
 
-                <div class="flex flex-col justify-start items-start gap-5 w-11/12 h-50vh">
+                <div class="flex flex-col justify-start items-start gap-5 w-11/12">
                     <div class="flex flex-col justify-center items-start gap-3 w-full">
                         <div class="flex justify-between items-center w-full">
-                            <h2 class="text-2xl font-semibold scrollleft">Space Invaders</h2>
-                            <h2 class="scrollright">July 2022</h2>
+                            <h2 class="text-2xl font-semibold scrollleft md:text-4xl">ClickBack</h2>
+                            <h2 class="scrollright">June 2023</h2>
                         </div>
-                        <h3 class="underline underline-offset-4 decoration-2 scrollfade2">Python Pygame Library</h3>
+                        <h3 class="underline underline-offset-4 decoration-2 scrollfade2">Game Dev</h3>
                     </div>
-                    <p class="scrollfade">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi atque et quibusdam rerum minima eum cum beatae excepturi, consectetur error distinctio quam, aliquam eveniet, enim ipsa iure nemo recusandae ipsum!</p>
-                    <div class="flex w-full items-start gap-4 scrollfade">
-                        <img class="size-9" src="assets/python.svg" alt="python logo">
+                    <p class="scrollfade md:text-xl">Clickback is a game made with the Godot engine, featuring a unique checkpoint system that lets players set and return to checkpoints anytime. This mechanic adds strategic depth to the gameplay, showcasing my ability to innovate and create engaging experiences with the Godot engine.</p>
+                    <div class="flex w-full justify-between items-start gap-4 scrollfade">
+                        <div>
+                            <img class="size-9" src="assets/godot.svg" alt="godot logo">
+                        </div>
+                        <div class="flex justify-center item-center ">
+                            <a href="https://westr86.itch.io/clickback" target="_blank" class="p-1 border-blue-950 rounded-md border-2 font-semibold bg-gradient-to-r from-blue-300 to-blue-100 md:text-lg md:hover:tracking-widest text-center transition-all">GET CLICKBACK</a>
+                        </div>
+                        
                     </div>
                 </div>
 
             </div>
+            <div class="flex flex-col justify-evenly items-center gap-12 ">
+                <div class="flex flex-col justify-start items-start gap-5 w-11/12">
+                    <div class="flex flex-col justify-center items-start gap-3 w-full">
+                        <div class="flex justify-between items-center w-full">
+                            <h2 class="text-2xl font-semibold scrollleft md:text-4xl">Simon Sites</h2>
+                            <h2 class="scrollright">May 2024</h2>
+                        </div>
+                        <h3 class="underline underline-offset-4 decoration-2 scrollfade2">Web Dev</h3>
+                    </div>
+                    <p class="scrollfade md:text-xl">SimonSites is my website development business, created from my passion for web development. It offers custom, responsive websites tailored to client needs, combining frontend design with backend functionality. SimonSites represents my dedication to crafting professional, user-friendly web solutions.</p>
+                    <div class="flex w-full justify-between items-start gap-4 scrollfade">
+                        <div class="flex gap-4 items-start">
+                            <img class="size-9" src="assets/html.svg" alt="html logo">
+                            <img class="size-9" src="assets/css.svg" alt="css logo">
+                            <img class="size-9" src="assets/js.svg" alt="js logo">
+                        </div>
+                        <div class="flex justify-center item-center ">
+                            <a href="https://simonsites.com" target="_blank" class="p-1 border-blue-950 rounded-md border-2 font-semibold bg-gradient-to-r from-blue-300 to-blue-100 md:text-lg md:hover:tracking-widest text-center transition-all">SIMON SITES</a>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-start items-start gap-5 w-11/12 ">
+                    <div class="flex flex-col justify-center items-start gap-3 w-full">
+                        <div class="flex justify-between items-center w-full">
+                            <h2 class="text-2xl font-semibold scrollleft md:text-4xl">To Do List</h2>
+                            <h2 class="scrollright">June 2024</h2>
+                        </div>
+                        <h3 class="underline underline-offset-4 decoration-2 scrollfade2">Advanced Frontend</h3>
+                    </div>
+                    <p class="scrollfade md:text-xl">This project introduced me to Alpine.js and Tailwind CSS. The to-do list application features dynamic task management with a sleek, responsive design. It was an important learning experience, showcasing my ability to integrate new tools into practical web development projects.</p>
+                    <div class="flex w-full items-start gap-4 scrollfade">
+                        <img class="size-9" src="assets/html.svg" alt="html logo">
+                        <img class="size-9" src="assets/tailwind.svg" alt="tailwind logo">
+                        <img class="size-9" src="assets/alpine.svg" alt="alpine logo">
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex flex-col justify-evenly items-center gap-12 ">
+                <div class="flex flex-col justify-start items-start gap-5 w-11/12">
+                    <div class="flex flex-col justify-center items-start gap-3 w-full">
+                        <div class="flex justify-between items-center w-full">
+                            <h2 class="text-2xl font-semibold scrollleft md:text-4xl">Online Forum</h2>
+                            <h2 class="scrollright">Aug 2024</h2>
+                        </div>
+                        <h3 class="underline underline-offset-4 decoration-2 scrollfade2">Backend Dev</h3>
+                    </div>
+                    <p class="scrollfade md:text-xl">This message board project, built to learn backend development with PHP, includes a secure login system and post management. It allows users to create and manage posts, focusing on backend functionality and security without moderation or post editing features. It was a fun and practical learning exercise.</p>
+                    <div class="flex w-full justify-between items-start gap-4 scrollfade">
+                        <div class="flex gap-4">
+                            <img class="size-9" src="assets/html.svg" alt="html logo">
+                            <img class="size-9" src="assets/css.svg" alt="css logo">
+                            <img class="size-9" src="assets/alpine.svg" alt="alpine logo">
+                            <img class="size-9" src="assets/mysql.svg" alt="sql logo">
+                            <img class="size-9" src="assets/php.svg" alt="php logo">                        </div>
+                        <div class="flex justify-center item-center ">
+                            <a href="https://forum.simonsites.com" target="_blank" class="p-1 border-blue-950 rounded-md border-2 font-semibold bg-gradient-to-r from-blue-300 to-blue-100 md:text-lg md:hover:tracking-widest text-center transition-all">FORUM</a>
+                        </div>
+                        
+                    </div>
+
+                    </div>
+                </div>
+
+            </div>
+            
 
             
         </div>
@@ -135,5 +216,6 @@
         <span>&copy; 2024 | Simon. P | All Rights Reserved</span>
     </div>
 </footer>
+<br class="hidden" id="langbar">
 </body>
 </html>
